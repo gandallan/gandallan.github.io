@@ -1,0 +1,163 @@
+.u-title{
+	color: #00CCFF;
+	text-decoration: none;
+	border-bottom: 1px dashed #00CCFF;
+	font-weight: normal;
+	text-align: center;
+	padding-bottom: .5em;
+}
+.u-containerDefault{
+	max-width: 50em;
+}
+/*==============Header==================*/
+.Header
+{
+	margin-top:3.75em;
+	background-image: url(../images/portada.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding: 1.2em 0;
+}
+.Header-imageContainer
+{
+	margin: 0;
+}
+.Header-image
+{
+	border: 5px solid white;
+	border-radius: 50%;
+	margin-bottom: .5em;
+}
+.Header-link
+{
+	color: white;
+	font-size: 2.2em;
+	font-weight: bold;
+	text-decoration: none;
+}
+.Header-name
+{
+	color: white;
+	font-size: 1.2em;
+	font-weight: 200;
+}
+/*==============Menu==================*/
+.MainMenu
+{
+	position: fixed;
+	text-align: center;
+	background-color: #1E1E1E;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	height: 3.75em;
+	top:0;
+}
+.MainMenu-list{
+	margin:0;
+	padding: 0;
+}
+.MainMenu-item{
+	display: inline-block;
+	padding-right: 15px;
+}
+.MainMenu-item:hover{
+	border-bottom: 1px solid orange;
+}
+.MainMenu-item:active{
+	background-color: orange;
+	color:white;
+}
+.MainMenu-link{
+	color: #00DBFF;
+	text-decoration: none;
+	line-height: 3.75em;
+}
+.MainMenu-link:visited{
+	background-color: orange;
+}
+ 
+/*==============Profile==================*/
+
+
+.Profile{ 
+	text-align: center;
+}
+.Profile-description{
+	margin:  0 1em 0 1em;
+	padding-bottom: 2em;
+}
+.Profile-link{
+	background-color: orange;
+	color:white;
+	text-decoration: none;
+	border-radius: 2em;
+	padding:.5em;
+
+}
+/*==============Work==================*/
+.Work{
+	margin-top: 2em;
+	text-align: center;
+}
+.Work-item{
+	display:inline-block;
+	margin: 0 1.8em 1.8em 0;	
+}
+.Work-imageContainer{
+	margin: 0;
+}
+.Work-description{
+	font-size: 1.1em;
+	color: #515151;
+	font-style: italic;
+}
+.Footer{
+	background-image: url('../images/bg2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 2em 0;
+	text-align: center;
+}
+.Footer-left{
+	display: inline-block;
+	width:20em;
+	margin: 1em auto;
+	vertical-align: top;
+	text-align: left; 
+	padding: 0 1.5em;
+}
+.Footer-title{
+	color:white;
+}
+.Footer-description{
+	
+}
+.Footer-form{
+	text-align: center;
+	display: inline-block;
+}
+.Footer-formInput,
+.Footer-textarea{
+	background: white;
+	border:none;
+	display: block;
+	border-radius: 2em;
+	padding: .5em;
+	margin: 0 auto 1em;
+}
+.Footer-textarea{
+	resize: none;
+}
+.Footer-formButton{
+	background: orange;
+	color:white;
+	border-radius:1em;
+	border:none;
+	padding: .5em 1em;
+	margin-bottom: 1em;
+}
+

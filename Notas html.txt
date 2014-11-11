@@ -1,0 +1,134 @@
+“<figcaption>” es la descripción de una imagen
+
+“Atributos” son los estilos que se le ponen directamente a una etiqueta, también son los que se le añaden a través de una clase, de igual manera la etiqueta <style> puede estar dentro del html.  Ejemplos:
+Ej.1
+<header syle=“width= 50%”></header>
+
+Ej.2
+En html
+<header class=“Cabeza”></header>
+
+En Css
+.Cabeza
+{
+width: 50%;
+}
+
+Ej.3
+
+<head>
+	<style>
+		header
+		{
+			width=“50%”
+		}
+	</style>
+</head>
+
+Header dentro del css es un selector de etiqueta. Porque la etiqueta que tiene se llama header
+
+“Selectror descendente” que es para darle estilo a un elemento dentro de otro. Ej.
+
+En css
+	header nav
+De esta manera todos los atributos que le asigne a “header nav” serán aplicados a todos los nav que hay dentro del header.
+
+Los “id” no se pueden repetir en el html, es como un documento de identidad, no podemos duplicarlo.
+
+Las clases si pueden repetirse. 
+
+“Selector de hijo”. Son todas las etiquetas que se encuentran dentro de de otra etiqueta pero que se encuentren directo. Ej
+
+En css
+	 ul > li
+	{
+	width:50%;
+	}
+Los li que se encuentren dentro de una etiqueta que no sea directa de la primera no se le asignará el estilo. Ej.
+
+En html
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<a>
+			<li></li> “este li ya no tendría el estilo que se le tiene asignado como hijo del ul”.
+		</a>
+	</ul>
+
+
+“Selector adyacente” va a ponerle los mismos atributos del estilo a la etiqueta que tenga de junto.Ej.
+
+En html
+<section>
+</section>
+<section>
+</section>
+
+En css
+section + section 
+{
+	width:50%;
+}
+
+“Selector de atributos” se declaran con las llaves cuadradas “[]”, todos los atributos que estén dentro de este selector llevaran los atributos. Ej.
+
+[href]
+{
+	width:50;
+}
+ de esta manera todo los href dentro de mi html tendrán este mismo atributo ”width:50%;”. Y siendo un poco más específicos podemos decir que todos los “[href = “#yo”]” tengas este atributo.
+_________________________________________________________________________________________
+
+NORMALIZE
+
+“normalize” va a añadir estilos base a nuestro documento idéntico para todos los navegadores.
+________________________________________________________________________________________
+Modulos CSS
+ - Divide y vencerás.
+ - Lo mas recomendado es utilizar selectores de clase.
+ Hay 5 reglase para asignar bien nuestras clases.
+	1- la primera es asignarlas por componentes. “.My component{}”
+	2- la segunda es un componente con un estado. Es una segunda clase que se le añade 
+	 a mi elemento. “.Mycomponent.is-animating{}”
+	3- La tercera es que el componente puede tener modificadores. 		“.Mycomponent—-modifier{}”.
+	4- La cuarta es que el componente puede tener partes.Ej. mi perfil tiene un titulo, mi perfil tiene enlaces. “.Mycomponent-part{}”, “.Mycomponent-anotherPart{}”
+	5- La quinta es que los componentes pueden tener utilidades. Es tener una clase que tenga “u-nombreDeLaUtilidad”.
+_______________________________________________________________________________________
+Css orientado a objetos
+
+	Esto es poner todos los elementos súper reutilizables. De esta manera podemos hacer aplicaciones web modulares aunque sean pequeñas.
+_______________________________________________________________________________________
+
+Modelo de cajas
+ los modelos de cajas están compuestos por:
+	1)Content
+	2)Padding o margin interior se percibe con respecto a lo que es el borde y al 		contenido
+	3)Boder podemos ponerle un color
+	4)Margin exterior no se ve, pero si se siente cuando tienes varias cajas apiladas.
+
+Un display es una propiedad de Css, sirve para asignar a los elementos como queremos que se vean, puede ser como:
+	1)bloque
+	2)parte de un bloque
+	3) invisible
+	4) un elemento en linea.
+La mayoría de los elementos tienen un display block el cual abarca todo el ancho de la pagina.
+Display “inline-block” con esto hacemos que el ancho sea el ancho de su contenido. también se pone a un costado de otro elemento.
+El “vertical-align” sirve para posicionar un elemento en vertical.
+Display “inline” .- 
+“<strong>” dentro de del html, resalta una palabra, letra o frase.
+“<em>” sirve para poner en itálicas las letras o palabras.
+“<span>”Una etiqueta que es INLINE y nos sirve para darle estilo a un texto
+
+
+_______________________________________________________________________________________
+
+Positions
+	4 PRINCIPALES
+	- Static es que se encuentra por defecto en nuestros elementos.
+	- Relativenos da 5 nuevas propiedades (top,right,bottom,left, z-index). Esto hará que el 	elemento al que se le aplico el relativa se mueva lo que se le haya indicado 	con las propiedades.
+		.-Los “z-index” hace que un elemento pueda estar por encima de otro.
+	- Absolute ya no respetan a su padre, ósea se va a ir hasta la esquina de la caja de la posición relativa más cercana que sea su padre, de no ser así se irá a la esquina del navegador. Al hacer esto ya no se respeta el espacio que tenia en la linea donde se encontraba.
+	- Fixed lo que hace  es que siempre va a querer estar en alguna parte del navegador, ósea en alguna parte del “viewPort” al momento de hacer scrolling. 
+
+Cuando se utiliza un Absolute o un Fixed rompemos el modelo de caja.
