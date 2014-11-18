@@ -1,54 +1,21 @@
 .u-title{
-	color: #00CCFF;
+	background-color: #FFA440;
+	color: white;
 	text-decoration: none;
-	border-bottom: 1px dashed #00CCFF;
-	font-weight: normal;
-	text-align: center;
-	padding-bottom: .5em;
+	font-weight: thin;
+	text-align: left;
+	padding: 1em;
+	margin: 0;
 }
 .u-containerDefault{
 	max-width: 50em;
-}
-/*==============Header==================*/
-.Header
-{
-	margin-top:3.75em;
-	background-image: url(../images/portada.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	text-align: center;
-	padding: 1.2em 0;
-}
-.Header-imageContainer
-{
-	margin: 0;
-}
-.Header-image
-{
-	border: 5px solid white;
-	border-radius: 50%;
-	margin-bottom: .5em;
-}
-.Header-link
-{
-	color: white;
-	font-size: 2.2em;
-	font-weight: bold;
-	text-decoration: none;
-}
-.Header-name
-{
-	color: white;
-	font-size: 1.2em;
-	font-weight: 200;
 }
 /*==============Menu==================*/
 .MainMenu
 {
 	position: fixed;
 	text-align: center;
-	background-color: #1E1E1E;
+	background-color: #013C3D;
 	left: 0;
 	right: 0;
 	z-index: 1;
@@ -78,24 +45,118 @@
 .MainMenu-link:visited{
 	background-color: orange;
 }
+/*==============Header==================*/
+.Header
+{
+	margin-top:3.75em;
+	background-image: url(../images/portada.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding: 1.2em 0;
+}
+.Header-imageContainer
+{
+	margin: 0;
+}
+.Header-image
+{
+	border: 5px solid white;
+	border-radius: 50%;
+	margin: 0.9em 0;
+}
+.Header-link
+{
+	color: white;
+	font-size: 2.2em;
+	font-weight: 500;
+	text-decoration: none;
+}
+.Header-name
+{
+	color: white;
+	font-size: 1.2em;
+	font-weight: 200;
+	margin: 0;
+}
+.Header-phone
+{
+	color: white;
+	font-size: 1.2em;
+	font-weight: 200;
+	margin-bottom: 0;
+}
+.Header-mail
+{
+	color: white;
+	font-size: 1.2em;
+	font-weight: 200;
+	margin-top: 0.3em;
+}
  
 /*==============Profile==================*/
 
 
 .Profile{ 
 	text-align: center;
+
 }
 .Profile-description{
-	margin:  0 1em 0 1em;
-	padding-bottom: 2em;
+	margin:  1.5em 1em;
+	font-weight: 100;
 }
-.Profile-link{
-	background-color: orange;
-	color:white;
-	text-decoration: none;
-	border-radius: 2em;
-	padding:.5em;
+.Profile-item{
+	display: inline-block;
+}
+.Profile-aprender{
+	text-align: left;
+	display: inline-block;
+	width: 13em;
+	font-size: .8em;
 
+}
+.Profile-aprenderImage{
+	display: inline-block;
+	width: 144px;
+	padding-left: 1em;
+	border-radius: 50%;
+}
+.Profile-testTitle{
+	text-align: left;
+	padding-left:2em;
+}
+.Profile-testLine{
+	display: inline-block;
+}
+.Profile-testCicle{
+	display: inline-block;
+	background-color: grey;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+.Profile-testLongline{
+	display: inline-block;
+	vertical-align: 4px;
+	margin-left:-5px;
+	background-color: grey;
+	width: 20em;
+	height: 3px;
+	
+}
+.Profile-test1{
+	margin: 0 1em;
+}
+.Profile-test1Image{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: lightblue;
+	border-radius: 50%;
+}
+.Profile-test1Profile{
+	display: inline-block;
 }
 /*==============Work==================*/
 .Work{
