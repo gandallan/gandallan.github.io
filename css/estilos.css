@@ -1,14 +1,19 @@
 .u-title{
-	background-color: #FFA440;
 	color: white;
 	text-decoration: none;
 	font-weight: thin;
-	text-align: left;
+	text-align: center;
 	padding: 1em;
 	margin: 0;
 }
 .u-containerDefault{
 	max-width: 50em;
+}
+.test-align{
+	display: block;
+	margin: auto;
+	width: 20.5em;
+	text-align: left;
 }
 /*==============Menu==================*/
 .MainMenu
@@ -100,38 +105,52 @@
 
 .Profile{ 
 	text-align: center;
-
+	background-color: #FFA440;
 }
 .Profile-description{
-	margin:  1.5em 1em;
+	margin:  0em 1em 2em 1em;
 	font-weight: 100;
+	color:#CE741B;
 }
 .Profile-item{
 	display: inline-block;
-}
-.Profile-aprender{
-	text-align: left;
-	display: inline-block;
-	width: 13em;
-	font-size: .8em;
-
+	width: 20.5em;
+	height: 20.5em;
+	border : 1px solid #CE741B;
+	border-radius: 10%;
+	margin: 1em;
 }
 .Profile-aprenderImage{
-	display: inline-block;
-	width: 144px;
-	padding-left: 1em;
+	width: 9em;
+	margin-top: 1.5em;
 	border-radius: 50%;
 }
+.Profile-aprender{
+	text-align: center;
+	width: 80%;
+	font-size: .8em;
+	padding-left: 10%;
+}
+.Profile-aprenderTitle{
+	color:white;
+	font-weight: normal;
+}
+.Profile-aprenderDescription{
+	font-weight: normal;
+}
 .Profile-testTitle{
-	text-align: left;
-	padding-left:2em;
+	color:#4C4C4C;
+	text-align: center;
+	margin-left: -9em;
 }
 .Profile-testLine{
-	display: inline-block;
+	display: block;
+	position: relative;
+	top:-1em;
 }
 .Profile-testCicle{
 	display: inline-block;
-	background-color: grey;
+	background-color: #f1f1f1;
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
@@ -140,23 +159,39 @@
 	display: inline-block;
 	vertical-align: 4px;
 	margin-left:-5px;
-	background-color: grey;
-	width: 20em;
-	height: 3px;
-	
+	background-color: #f1f1f1;
+	width: 19em;
+	height: 3px;	
 }
 .Profile-test1{
-	margin: 0 1em;
+	display: inline-block;
+	margin:auto;
+	width: 20.5em;
+	border : 1px solid #CE741B;
+}
+.Profile-test1Profile{
+	margin-top: 1em;
 }
 .Profile-test1Image{
 	display: inline-block;
 	width: 50px;
 	height: 50px;
-	background-color: lightblue;
+	background-color: pink;
 	border-radius: 50%;
+	position:relative;
+	left:-1em;
 }
-.Profile-test1Profile{
+.Profile-test1Datos{
 	display: inline-block;
+}
+.Profile-test1Name{
+	position: relative;
+	top: -.7em;
+	text-align: left;
+	margin-bottom: .5em;
+}
+.Profile-test1Description{
+	margin:0 1.5em;
 }
 /*==============Work==================*/
 .Work{
