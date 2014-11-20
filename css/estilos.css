@@ -25,22 +25,22 @@
 	right: 0;
 	z-index: 1;
 	height: 3.75em;
-	top:0;
+	top: 0;
 }
 .MainMenu-list{
-	margin:0;
+	margin: 0;
 	padding: 0;
 }
 .MainMenu-item{
 	display: inline-block;
-	padding-right: 15px;
+	padding-right: .93em;
 }
 .MainMenu-item:hover{
 	border-bottom: 1px solid orange;
 }
 .MainMenu-item:active{
 	background-color: orange;
-	color:white;
+	color: white;
 }
 .MainMenu-link{
 	color: #00DBFF;
@@ -53,7 +53,7 @@
 /*==============Header==================*/
 .Header
 {
-	margin-top:3.75em;
+	margin-top: 3.75em;
 	background-image: url(../images/portada.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -67,7 +67,7 @@
 }
 .Header-image
 {
-	border: 5px solid white;
+	border: .31em solid white;
 	border-radius: 50%;
 	margin: 0.9em 0;
 }
@@ -110,7 +110,7 @@
 .Profile-description{
 	margin:  0em 1em 2em 1em;
 	font-weight: 100;
-	color:#CE741B;
+	color: #CE741B;
 }
 .Profile-item{
 	display: inline-block;
@@ -131,37 +131,37 @@
 	padding-left: 10%;
 }
 .Profile-aprenderTitle{
-	color:white;
+	color: white;
 	font-weight: normal;
 }
 .Profile-aprenderDescription{
 	font-weight: normal;
 }
 .Profile-testTitle{
-	color:#4C4C4C;
+	color: rgba(167, 34, 34, 1);
 	text-align: center;
-	margin-left: -9em;
+	max-width: 43%
 }
 .Profile-testLine{
 	display: block;
 	position: relative;
-	top:-1em;
+	top: -1em;
 }
 .Profile-testCicle{
 	display: inline-block;
 	background-color: #f1f1f1;
-	width: 10px;
-	height: 10px;
+	width: .625em;
+	height: .625em;
 	border-radius: 50%;
 }
 .Profile-testLongline{
 	display: inline-block;
 	vertical-align: 4px;
-	margin-left:-5px;
+	margin-left: -.312em;
 	background-color: #f1f1f1;
 	width: 82%;
 	min-width: 19em;
-	height: 3px;
+	height: .187em;
 }
 .Profile-test1{
 	display: inline-block;
@@ -174,12 +174,12 @@
 }
 .Profile-test1Image{
 	display: inline-block;
-	width: 50px;
-	height: 50px;
+	width: 3.125em;
+	height: 3.125em;
 	background-color: pink;
 	border-radius: 50%;
-	position:relative;
-	left:-1em;
+	position: relative;
+	left: -1em;
 }
 .Profile-test1Datos{
 	display: inline-block;
@@ -198,24 +198,37 @@
 }
 /*==============Work==================*/
 .Work{
-	margin-top: 2em;
 	text-align: center;
 }
 .Work-title{
 	color: rgba(38, 173, 173, 1);
 }
-.Work-item{
-	display:inline-block;
-	margin: 0 1.8em 1.8em 0;	
+.Work-align{
+	margin-left: 1.6em;
 }
-.Work-imageContainer{
+.Work-item{
+	display: inline-block;
+	margin: 0 1.8em 1.8em 0;	
+	position: relative;
+}
+.Work-itemContainer{
 	margin: 0;
 }
-.Work-description{
-	font-size: 1.1em;
-	color: #515151;
-	font-style: italic;
+.Work-image{
+	position: relative;
 }
+.Work-imageDescription{
+	position: absolute;
+	right: 0;
+	left: 0;
+	top:9.8em;
+	font-size: 1.1em;
+	color: white;
+	background-color: rgba(0, 0, 0, .7);
+	padding: .8em;
+
+}
+/*==============Footer==================*/
 .Footer{
 	background-image: url('../images/bg2.jpg');
 	background-repeat: no-repeat;
@@ -233,10 +246,7 @@
 	padding: 0 1.5em;
 }
 .Footer-title{
-	color:white;
-}
-.Footer-description{
-	
+	color: white;
 }
 .Footer-form{
 	text-align: center;
@@ -257,7 +267,7 @@
 .Footer-formButton{
 	background: orange;
 	color:white;
-	border-radius:1em;
+	border-radius: 1em;
 	border:none;
 	padding: .5em 1em;
 	margin-bottom: 1em;
