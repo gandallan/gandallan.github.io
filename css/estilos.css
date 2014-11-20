@@ -12,7 +12,7 @@
 .test-align{
 	display: block;
 	margin: auto;
-	width: 20.5em;
+	max-width: 20.5em;
 	text-align: left;
 }
 /*==============Menu==================*/
@@ -114,8 +114,7 @@
 }
 .Profile-item{
 	display: inline-block;
-	width: 20.5em;
-	height: 20.5em;
+	max-width: 20.5em;
 	border : 1px solid #CE741B;
 	border-radius: 10%;
 	margin: 1em;
@@ -160,17 +159,18 @@
 	vertical-align: 4px;
 	margin-left:-5px;
 	background-color: #f1f1f1;
-	width: 19em;
-	height: 3px;	
+	width: 82%;
+	min-width: 19em;
+	height: 3px;
 }
 .Profile-test1{
 	display: inline-block;
-	margin:auto;
-	width: 20.5em;
-	border : 1px solid #CE741B;
+	max-width: 20.5em;
+	border-radius: 10%;
+	margin: 1em;
 }
 .Profile-test1Profile{
-	margin-top: 1em;
+	margin: 1em;
 }
 .Profile-test1Image{
 	display: inline-block;
@@ -183,6 +183,7 @@
 }
 .Profile-test1Datos{
 	display: inline-block;
+	margin-bottom: 0;
 }
 .Profile-test1Name{
 	position: relative;
@@ -191,12 +192,17 @@
 	margin-bottom: .5em;
 }
 .Profile-test1Description{
-	margin:0 1.5em;
+	position: relative;
+	margin: 0em 1em;
+	top: -1em;
 }
 /*==============Work==================*/
 .Work{
 	margin-top: 2em;
 	text-align: center;
+}
+.Work-title{
+	color: rgba(38, 173, 173, 1);
 }
 .Work-item{
 	display:inline-block;
@@ -220,7 +226,7 @@
 }
 .Footer-left{
 	display: inline-block;
-	width:20em;
+	max-width:20em;
 	margin: 1em auto;
 	vertical-align: top;
 	text-align: left; 
