@@ -105,7 +105,7 @@
 
 .Profile{ 
 	text-align: center;
-	background-color: #FFA440;
+	background-color: #F7A954;
 }
 .Profile-description{
 	margin:  0em 1em 2em 1em;
@@ -221,7 +221,7 @@
 	position: absolute;
 	right: 0;
 	left: 0;
-	top:9.8em;
+	top:9.9em;
 	font-size: 1.1em;
 	color: white;
 	background-color: rgba(0, 0, 0, .7);
@@ -230,25 +230,26 @@
 }
 /*==============Footer==================*/
 .Footer{
-	background-image: url('../images/bg2.jpg');
+	background-color: #F7A954;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	padding: 2em 0;
 	text-align: center;
 }
 .Footer-left{
-	display: inline-block;
+	color: #8C4C0D;
 	max-width:20em;
-	margin: 1em auto;
+	margin: -1em auto;
 	vertical-align: top;
-	text-align: left; 
-	padding: 0 1.5em;
+	padding: 1.5em;
+
 }
 .Footer-title{
 	color: white;
+	text-align: center;
 }
 .Footer-form{
+	position: relative;
 	text-align: center;
 	display: inline-block;
 }
@@ -257,19 +258,43 @@
 	background: white;
 	border:none;
 	display: block;
-	border-radius: 2em;
 	padding: .5em;
 	margin: 0 auto 1em;
+	width: 18em;
 }
 .Footer-textarea{
 	resize: none;
 }
 .Footer-formButton{
-	background: orange;
-	color:white;
-	border-radius: 1em;
+	position: relative;
+	background: #FFE600;
+	color: #8C4C0D;
 	border:none;
 	padding: .5em 1em;
 	margin-bottom: 1em;
+	margin-left: -14em;	
 }
-
+.Footer-lineButton{
+	position: absolute;
+	padding-top:.2em;
+	padding-left:5em;
+	background-color: #BFA404;
+	left:0;
+	top:16.3em;
+}
+.Gracias{
+	margin:0;
+}
+.Gracias-imagen{
+	margin: auto;
+	width: 4.125em;
+	height: 4.125em;
+	background-color: pink;
+	border-radius: 50%;
+	position: relative;
+}
+.Gracias-description{
+	color: #8C4C0D;
+	margin: 0;
+	padding: 2em 0;
+}
