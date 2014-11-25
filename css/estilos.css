@@ -140,6 +140,9 @@
 .Profile-aprenderDescription{
 	font-weight: normal;
 }
+.Profile-test1{
+	display: none;
+}
 .Profile-testTitle{
 	color: rgba(167, 34, 34, 1);
 	text-align: center;
@@ -316,4 +319,11 @@
 	color: #8C4C0D;
 	margin: 0;
 	padding: 2em 0;
+}
+@media screen and (min-width: 768px) {
+	.Profile,.Profile-test1,.Work{
+		padding: 0 1.8em 0 1.8em;
+	}
+
+	
 }

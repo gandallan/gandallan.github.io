@@ -1,6 +1,7 @@
 var $button = $('#Work_itemFuentevida'),
 	$imgs_Fuentevida = $('#imagenes_Fuentevida'),
-	$regresar = $('#Work-regresar')
+	$regresar = $('#Work-regresar'),
+	$testimonios = $('#profile-test')
 
 function mostrarImagenesFuentevida(){
 	$imgs_Fuentevida.slideToggle();
@@ -14,3 +15,4 @@ function ocultarImagenesFuentevida(){
 
 $button.click(mostrarImagenesFuentevida)
 $regresar.click(ocultarImagenesFuentevida)
+$testimonios.
