@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100,300' rel='stylesheet' type='text/css'>
 	<title>Portafolio</title>
 </head>
 <body>
@@ -46,7 +46,7 @@
 		<h1 class="Profile-title u-title">Perfil</h1>
 		<h3 class="Profile-description"> Existen 4 fundamentos personales que rigen mi vida laboral.</h3>
 		<article class="Profile-item">
-				<img class="Profile-aprenderImage" src="images/thumb7.jpg" alt="">
+				<img class="Profile-aprenderImage" src="images/icon1.png" alt="">
 				<div class="Profile-aprender">
 					<h2 class="Profile-aprenderTitle">Aprender</h2>
 					<h4 class= "Profile-aprenderDescription">	
@@ -56,7 +56,7 @@
 				</div>
 		</article>
 		<article class="Profile-item">
-				<img class="Profile-aprenderImage" src="images/thumb7.jpg" alt="">
+				<img class="Profile-aprenderImage pacman" src="images/icon2.png" alt="">
 				<div class="Profile-aprender">
 					<h2 class="Profile-aprenderTitle">Practicar</h2>
 					<h4 class= "Profile-aprenderDescription">	
@@ -67,7 +67,7 @@
 				</div>
 		</article>
 		<article class="Profile-item">
-				<img class="Profile-aprenderImage" src="images/thumb7.jpg" alt="">
+				<img class="Profile-aprenderImage" src="images/icon3.png" alt="">
 				<div class="Profile-aprender">
 					<h2 class="Profile-aprenderTitle">Enseñar</h2>
 					<h4 class= "Profile-aprenderDescription">	
@@ -77,7 +77,7 @@
 				</div>
 		</article>
 		<article class="Profile-item">
-				<img class="Profile-aprenderImage" src="images/thumb7.jpg" alt="">
+				<img class="Profile-aprenderImage" src="images/icon4.png" alt="">
 				<div class="Profile-aprender">
 					<h2 class="Profile-aprenderTitle">Retroalimentar</h2>
 					<h4 class= "Profile-aprenderDescription">	
@@ -127,14 +127,14 @@
 						</div>
 					</div>
 					<div class="test-align">	
-						<p class="Profile-test1Description">El ver los resultados de lo realizado siempre me ha sido de utilidad para optimizar la experiencia del usuario en mis trabajos.</p>
+						<h4 class="Profile-test1Description">El ver los resultados de lo realizado siempre me ha sido de utilidad para optimizar la experiencia del usuario en mis trabajos.</h4>
 					</div>
 				</div>
 				<div class="Profile-test1">
 					<div class="Profile-test1Profile">
 						<div class="Profile-test1Image"></div>
 						<div class="Profile-test1Datos">
-							<h4 class="Profile-test1Name">Ing. Ramanujan Gómez <br> Director académico escolar</h4>
+							<h5 class="Profile-test1Name">Ing. Ramanujan Gómez <br> Director académico escolar</h5>
 						</div>
 					</div>
 					<div class="test-align">	
@@ -149,28 +149,49 @@
 	<section id="trabajo" class="Work">
 		<h2 class="Work-title">Mi trabajo</h2>
 		<div class="Work-align">
-			<div class="Work-item">
+			<div class="Work-item" id="Work_itemFuentevida">
 				<div class="Work-itemContainer">
 					<img class="Work-image"src="images/thumb1.jpg" alt="Esta es la descripcion de mi imagen">
-					<span class="Work-imageDescription">Fuente de vida <br> Branding</span>
+					<div class="Work-imageDatos">	
+						<p class="Work-imageBrand">Fuente de vida</p>
+						<p class="Work-imageDescription">Branding</p>
+					</div>
 				</div>
 			</div>
-			<div class="Work-item">
+			<div class="Work-imagenesFuentevida" id="imagenes_Fuentevida">
+				<img class="Fuentevida-images" src="images/fuentevida/f1.jpg" alt="">
+				<img class="Fuentevida-images" src="images/fuentevida/f2.jpg" alt="">
+				<img class="Fuentevida-images" src="images/fuentevida/f3.jpg" alt="">
+				<img class="Fuentevida-images" src="images/fuentevida/f4.jpg" alt="">
+				<img class="Fuentevida-images" src="images/fuentevida/f5.jpg" alt="">
+				<img class="Fuentevida-images" src="images/fuentevida/f7.jpg" alt="">
+				<h3 class="Work-regresar" id="Work-regresar"> Regresar </h3>
+			</div>
+			<div class="Work-item" id="Work-itemSamira">
 				<div class="Work-itemContainer">
-					<img class="Work-image"src="images/thumb1.jpg" alt="Esta es la descripcion de mi imagen">
-					<span class="Work-imageDescription">Fuente de vida <br> Branding</span>
+					<img class="Work-image"src="images/thumb2.jpg" alt="Esta es la descripcion de mi imagen">
+					<div class="Work-imageDatos">	
+						<p class="Work-imageBrand">Samira Mrad</p>
+						<p class="Work-imageDescription">Branding</p>
+					</div>
 				</div>
 			</div>
-			<div class="Work-item">
+			<div class="Work-item" id="Work-itemFuentesalud">
 				<div class="Work-itemContainer">
-					<img class="Work-image"src="images/thumb1.jpg" alt="Esta es la descripcion de mi imagen">
-					<span class="Work-imageDescription">Fuente de vida <br> Branding</span>
+					<img class="Work-image"src="images/thumb3.jpg" alt="Esta es la descripcion de mi imagen">
+					<div class="Work-imageDatos">	
+						<p class="Work-imageBrand">Fuente de la salud</p>
+						<p class="Work-imageDescription">Editoral</p>
+					</div>
 				</div>
 			</div>
-			<div class="Work-item">
+			<div class="Work-item" id="Work-itemFotografia">
 				<div class="Work-itemContainer">
-					<img class="Work-image"src="images/thumb1.jpg" alt="Esta es la descripcion de mi imagen">
-					<span class="Work-imageDescription">Fuente de vida <br> Branding</span>
+					<img class="Work-image"src="images/thumb4.jpg" alt="Esta es la descripcion de mi imagen">
+					<div class="Work-imageDatos">	
+						<p class="Work-imageBrand">Hobby</p>
+						<p class="Work-imageDescription">Fotografía</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -185,15 +206,19 @@
 		</div>
 		<form class="Footer-form">
 			<input class="Footer-formInput" type="text" placeholder="Nombre"/>
-			<input class="Footer-formInput" type="email"placeholder="email"/>
+			<input class="Footer-formInput" type="email"placeholder="email" require/>
 			<textarea class="Footer-textarea" name="" id="" cols="20" rows="5" placeholder="mensaje"></textarea>
 			<button class="Footer-formButton" type="submit">Enviar</button>
 			<dif class="Footer-lineButton"></dif>
 		</form>
-		<dig class="Gracias">
-			<div class="Gracias-imagen"></div>
+		<div class="Gracias">
+			<div class="Gracias-imagen">
+				<img src="images/smile-icon.png" alt="">
+			</div>
 			<p class="Gracias-description">Gracias por visitar mi portafolio.</p>
-		</dig>
+		</div>
 	</footer>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/formulario.js"></script>
 </body>
 </html>
