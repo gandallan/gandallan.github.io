@@ -1,3 +1,57 @@
+/*=======FONT=======*/
+@font-face {
+	font-family: 'Portafolio';
+	src:url('../fonts/Portafolio.eot?mhmav7');
+	src:url('../fonts/Portafolio.eot?#iefixmhmav7') format('embedded-opentype'),
+		url('../fonts/Portafolio.woff?mhmav7') format('woff'),
+		url('../fonts/Portafolio.ttf?mhmav7') format('truetype'),
+		url('../fonts/Portafolio.svg?mhmav7#Portafolio') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'Portafolio';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/*=======FONT-ICON=======*/
+.icon-face:before {
+	content: "\e600";
+}
+.icon-aprender:before {
+	content: "\e601";
+}
+.icon-down:before {
+	content: "\e602";
+}
+.icon-ensenar:before {
+	content: "\e603";
+}
+.icon-left:before {
+	content: "\e604";
+}
+.icon-practicar:before {
+	content: "\e605";
+}
+.icon-retro:before {
+	content: "\e606";
+}
+.icon-right:before {
+	content: "\e607";
+}
+.icon-up:before {
+	content: "\e608";
+}
+
 .u-title{
 	color: white;
 	text-decoration: none;
@@ -15,7 +69,9 @@
 	max-width: 20.5em;
 	text-align: left;
 }
-
+h1,h2,h3,h4,h5{
+	line-height: 1.5em;
+}
 /*==============Menu==================*/
 .MainMenu
 {
@@ -34,13 +90,13 @@
 }
 .MainMenu-item{
 	display: inline-block;
-	padding-right: .93em;
+	padding: 0 .93em;
 }
 .MainMenu-item:hover{
-	border-bottom: 1px solid orange;
+	color:white;
 }
 .MainMenu-item:active{
-	background-color: orange;
+	background-color: rgba(2, 44, 45, 1);
 	color: white;
 }
 .MainMenu-link{
@@ -116,13 +172,17 @@
 .Profile-item{
 	display: inline-block;
 	max-width: 20.5em;
-	border : 1px solid #CE741B;
+	/*border : 1px solid #CE741B;*/
 	border-radius: 10%;
 	margin: 1em;
+	vertical-align: text-top;
 }
-.Profile-aprenderImage{
-	width: 9em;
-	margin-top: 1.5em;
+.icon-aprender,.icon-practicar,
+.icon-ensenar,.icon-retro{
+	color:white;
+	font-size: 3em;
+	margin:.2em;
+	padding-top:.2em; 
 }
 .pacman{
 	font-size: 1.78em;
@@ -139,12 +199,17 @@
 }
 .Profile-aprenderDescription{
 	font-weight: normal;
+	color:brown;
+}
+.Profile-test{
+	padding-bottom: 2em;
+	display:none;
 }
 .Profile-test1{
 	display: none;
 }
 .Profile-testTitle{
-	color: rgba(167, 34, 34, 1);
+	color: rgba(250, 241, 234, 1);
 	text-align: center;
 	max-width: 43%
 }
@@ -174,16 +239,17 @@
 	max-width: 20.5em;
 	border-radius: 10%;
 	margin: 1em;
+	vertical-align: text-top;
 }
 .Profile-test1Profile{
 	margin: 1em;
 }
 .Profile-test1Image{
 	display: inline-block;
-	width: 3.125em;
-	height: 3.125em;
-	background-color: pink;
+	width: 4.125em;
+	height: 4.125em;
 	border-radius: 50%;
+	border:.2em solid white;
 	position: relative;
 	left: -1em;
 }
@@ -193,15 +259,24 @@
 }
 .Profile-test1Name{
 	position: relative;
-	top: -.7em;
+	top: .3em;
 	text-align: left;
 	margin-bottom: .5em;
+	color:brown;
+}
+.Profile-test1Puesto{
+	position: relative;
+	top: -1em;
+	text-align: left;
+	margin-bottom: .5em;
+	color:brown;
 }
 .Profile-test1Description{
 	font-weight: normal;
 	position: relative;
 	margin: 0em 1em;
 	top: -1em;
+	color:brown;
 }
 /*==============Work==================*/
 .Work{
@@ -209,6 +284,7 @@
 }
 .Work-title{
 	color: rgba(38, 173, 173, 1);
+	margin: 2em;
 }
 .Work-align{
 	margin-left: 1.6em;
@@ -256,7 +332,7 @@
 .Work-regresar{
 	background-color: orange;
 	padding: 1em;
-	margin: 0 4.5em 3em 4.6em;
+	margin: 0 0em 3em 0em;
 }
 /*==============Footer==================*/
 .Footer{
@@ -265,6 +341,7 @@
 	background-position: center;
 	background-size: cover;
 	text-align: center;
+	padding-bottom: 2em;
 }
 .Footer-left{
 	color: #8C4C0D;
@@ -315,15 +392,18 @@
 .Gracias{
 	margin:0;
 }
-.Gracias-description{
-	color: #8C4C0D;
+.icon-face{
+	color:#8C4C0D;
 	margin: 0;
-	padding: 2em 0;
+	font-size: 4em;
+	padding-top: .4em;
 }
-@media screen and (min-width: 768px) {
-	.Profile,.Profile-test1,.Work{
-		padding: 0 1.8em 0 1.8em;
-	}
+.Gracias-description{
+	color: brown;
+}
 
-	
+@media screen and (min-width: 1000px) {
+	.Profile,.Work{
+		padding: 0 5.96em 2em 5.96em;
+	}	
 }

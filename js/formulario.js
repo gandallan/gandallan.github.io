@@ -15,4 +15,3 @@ function ocultarImagenesFuentevida(){
 
 $button.click(mostrarImagenesFuentevida)
 $regresar.click(ocultarImagenesFuentevida)
-$testimonios.
