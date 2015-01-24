@@ -132,3 +132,5 @@ Positions
 	- Fixed lo que hace  es que siempre va a querer estar en alguna parte del navegador, ósea en alguna parte del “viewPort” al momento de hacer scrolling. 
 
 Cuando se utiliza un Absolute o un Fixed rompemos el modelo de caja.
+
+==========Nota: reanudando trabajo en el portafolio 23_01_2015 ====================
