@@ -15,5 +15,5 @@ function ocultarImagenesFuentevida(){
 }
 
 //Eventos
-$button.click(mostrarImagenesFuentevida)
-$regresar.click(ocultarImagenesFuentevida)
+//$button.click(mostrarImagenesFuentevida)
+//$regresar.click(ocultarImagenesFuentevida)
